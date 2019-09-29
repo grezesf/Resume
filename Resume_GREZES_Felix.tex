@@ -1,0 +1,209 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+%\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{fullpage}
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{0pt}{0pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.5cm}
+\addtolength{\oddsidemargin}{-.5in}
+\addtolength{\evensidemargin}{-.5in}
+\addtolength{\textwidth}{1in}
+
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.75in}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{
+		{\Huge Felix \textsc{Grezes}
+\hfill
+{\huge Computer Science Researcher}$~$\\
+$~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${\huge Curriculum Vitae}
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+\section{Contact}
+\begin{tabular}{rl}
+\textsc{Email:}     & \href{mailto:grezesf@gmail.com}{grezesf@gmail.com}\\
+\textsc{Phone:}     & +1 (916) 866 9824\\
+\textsc{Address:}   & 19 Hamilton Terrace, Apt. 1K. New York, NY. USA.  \\
+%    \textsc{Place and Date of Birth:} & Someplace, Italy  | dd Month 1912 \\
+\end{tabular}
+\bigskip
+
+%Section: Work Experience at the top
+\section{Work Experience}
+\begin{tabular}{r|p{13cm}}
+ \emph{Fall 2012 - Current} & Research Assistant for the \href{http://speech.cs.qc.cuny.edu/}{Speech Lab @ Queens College}\\
+& \footnotesize{Research on the use of Recurrent Neural Networks, Reservoir Networks, and prosodic information for Natural Language Processing}\\
+& \footnotesize{Conception and writing of published scientific papers}\\
+\multicolumn{2}{c}{} \\
+
+\emph{Spring 2016 - Current} &  Adjunct Teacher at Hunter College, CUNY\\
+& \footnotesize{Teaching of advanced algorithms, design and analysis, as well as programming project for CS majors and minors.}\\
+\multicolumn{2}{c}{} \\
+
+\textsc{July - Dec 2011 } & Research Engineer at the \href{http://www.aging-vision-action.fr/}{Aging in Vision and Action Lab} in Paris\\
+& \footnotesize{(Formerly the Computational Neuroscience Lab ANC of the UPMC)}\\
+& \footnotesize{Research on the neural bases of active exploratory behavior in rats}\\
+& \footnotesize{Conception of a model of the rat brain and implementation in C++}\\
+& \footnotesize{Integration of the model in the \href{http://www.isir.upmc.fr/}{ISIR} lab platform, \href{https://github.com/sferes2/sferes2}{SFERES}}\\
+& \footnotesize{Improvement of the model's performances by evolution and genetic algorithm}\\
+& \footnotesize{Analysis and validation of the scientific hypothesis}\\
+%& \footnotesize{}\\
+\multicolumn{2}{c}{} \\
+
+\textsc{2008 - 2011} & Research projects during studies: design and development\\
+& \footnotesize{Boosting algorithm for automated text recognition, in Octave}\\
+& \footnotesize{Collision detection using multi-agent programming, in Java}\\
+& \footnotesize{Markov decision processes for an  improved AI in Starcraft video game, in C++ and XML}\\
+& \footnotesize{Power series calculation using lazy evaluation, in DrScheme}\\
+& \footnotesize{Perceptron for learning virtual soccer players, in Java}\\
+%& \footnotesize{}\\
+
+\end{tabular}\\
+
+%Section: Education
+\section{Education and Degrees}
+\begin{tabular}{rl}	
+ \emph{ ~~~ Fall 2012 - Current} & Doctoral Program in Computer Science at the City University of New York, \\
+& member of the IGERT {\em From Data to Solutions} program of Columbia University \\
+\textsc{2011} & {\bfseries Master's Degree in Computer Science} from Université Pierre et Marie Curie, Paris 6,\\
+& specialized in Artificial Intelligence and Decision theory\\ 
+\textsc{2009-2011} & Master cursus in Computer Science at Université Pierre et Marie Curie, Paris 6, \\
+&  specialized in Artificial Intelligence, learning agents and decision theory \\
+\textsc{2009} & {\bfseries Undergraduate Degree in Math and Computer Science},\\
+& from Université Pierre et Marie Curie, Paris 6\\
+\textsc{2008-2009} & Undergraduate of Math and Computer Science, City College Of New York\\
+\textsc{2006-2008} & Undergraduate of Math and Computer Science, from Université Pierre et Marie Curie, Paris 6\\
+\end{tabular}\\
+
+%%Section: Teaching
+%\section{Teaching Experience}
+%\begin{tabular}{r|p{11cm}}
+%\textsc{Spring 2016} &  Adjunct Teacher at Hunter College, CUNY\\
+%& \footnotesize{Teaching of advanced algorithms, design and analysis, as well as programming project for CS majors and minors.}\\
+%
+%\multicolumn{2}{c}{} \\
+%\textsc{2009-2011} &  Mathematics and English teacher for \href{http://www.acadomia.fr/}{Acadomia}\\
+%& \footnotesize{Individual tutoring of 15 students aged 12-17}\\
+%& \footnotesize{Training for Baccalauréat and Brevet (French graduation exams)}\\
+%& \footnotesize{Preparation of courses and work methods}\\
+%\multicolumn{2}{c}{} \\
+%\textsc{~~~~~~Summer 2006} & Mathematics teacher at the \href{http://www.excellencia.fr/en}{Excellencia French Summer Camp} \\
+%& \footnotesize{Group tutoring of students grade 6 through 10}\\
+%& \footnotesize{Preparation and grading of exams}\\
+%& \footnotesize{Writing of full student report cards, for the families}\\
+%\end{tabular}\\
+
+
+%Section: Publications:
+\section{Publications}
+\begin{tabular}{rl}
+\textsc{ \hspace{2.3cm} 2016} & Linguistically-Motivated Features for Language Recognition\\
+& submitted to InterSpeech 2016 \\
+\textsc{2015} & Speech Lab at Queens College: Language Recognition Evaluation 2015 \\
+& part of the 2015 NIST Language Recognition Evaluation Plan\\
+\textsc{2014} & Reservoir Computing for Neural Networks (a survey) \\
+& Second Examination of the CUNY Graduate Center Computer Science Program\\
+\textsc{2013} & Automatic Conflict Detection Using Speaker Overlap\\
+& published in Proceedings - InterSpeech 2013\\
+\textsc{2012} & Exploratory Behaviour Depends on Multisensory Integration during Spatial Learning\\
+& published in Artificial Neural Networks and Machine Learning - ICANN 2012
+\end{tabular}\\
+
+%Section: Languages
+\section{Languages}
+Native speaker of French and English. Basic knowledge of German.
+%
+%%Section: Skills
+%\section{Skills}
+%\begin{tabular}{r|l}
+%\textsc{Academic} & Expertise in Artificial Intelligence tools, including:\\
+%&\footnotesize{Neural Networks, in particular Reservoir networks, a class of recurrent networks }\\
+%&\footnotesize{Data mining algorithms, single and multi-criterion classification}\\
+%&\footnotesize{Genetic, symbolic, statistical and logical learning algorithms}\\
+%&\footnotesize{Decision theory algorithms, for individual and group decision}\\
+%&\footnotesize{Adaptive multi-agent programming}\\
+%&\footnotesize{Algorithm complexity theory}\\
+%\multicolumn{2}{c}{} \\
+%\textsc{Technical} & Knowledge of professional programming languages: Java, C/C++, XML, MySQL\\
+%& Knowledge of scientific programming languages: Python, OCaml, Octave/Matlab, Prolog, Haskell\\
+%& Expertise in Artificial Intelligence and Natural Language Processing tools and libraries (\href{http://reservoir-computing.org/oger}{OGER toolbox}, \href{http://www.nltk.org/}{NLTK})\\
+%\multicolumn{2}{c}{} \\
+%\hspace{1.35mm}\textsc{Teaching} & Knowledge of the contents of math and computer science courses for grades K-12 and undergraduate college level \\
+%& Experience in giving tutoring lessons to individuals and groups, in French and English
+%\end{tabular}
+%
+%%Section: Interest and Activities
+%\section{Interests and Activities}
+%\begin{itemize}
+%\item Interest in highly reproducible research as taught by \href{http://stodden.net}{Pr. Stodden}.\\
+%\href{https://jupyter.org/}{Jupyter} notebooks used in research.\\
+%Personal git repositories: \href{https://github.com/grezesf}{Github.com/grezesf}
+%
+%\item Competitive chess player, member of the \href{http://www.lutece-echecs.fr/}{Lutèce Echecs} club since 2000
+%\end{itemize}
+
+\end{document}
