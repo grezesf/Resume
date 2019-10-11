@@ -22,9 +22,9 @@
 %\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
 %%% modified for Karol Kozioł for ShareLaTeX use
 \setmainfont[
-SmallCapsFont = Fontin-SmallCaps.otf,
-BoldFont = Fontin-Bold.otf,
-ItalicFont = Fontin-Italic.otf
+    SmallCapsFont = Fontin-SmallCaps.otf,
+    BoldFont = Fontin-Bold.otf,
+    ItalicFont = Fontin-Italic.otf
 ]
 {Fontin.otf}
 %%%
@@ -39,7 +39,7 @@ ItalicFont = Fontin-Italic.otf
 \addtolength{\evensidemargin}{-.5in}
 \addtolength{\textwidth}{1in}
 
-\addtolength{\topmargin}{-.6in}
+\addtolength{\topmargin}{-.7in}
 \addtolength{\textheight}{1.75in}
 
 %Italian hyphenation for the word: ''corporations''
@@ -75,136 +75,152 @@ ItalicFont = Fontin-Italic.otf
 
 %--------------------TITLE-------------
 \par{
-    {\Huge Felix \textsc{Grezes}
-    \hspace*{\fill} {\huge Computer Science Researcher}\\
-    \hspace*{\fill} {\huge Resume}
-    }\bigskip
+    {\Huge Felix \textsc{Grezes}}
+    \hspace*{\fill} {\large \href{mailto:grezesf@gmail.com}{grezesf@gmail.com} }\\
+    \hspace*{\fill} {\large +1 (310) 496 6155}\\
+    \hspace*{\fill} {\large 19 Hamilton Terrace, Apt. 1K. New York, NY. USA.}
+    \bigskip
     \par}
+
 
 %--------------------SECTIONS-----------------------------------
 %Section: Personal Data
-\vspace{-0.2cm}
-\section{Contact}
-    \begin{tabular}{rl}
-        \textsc{Email:}     & \href{mailto:grezesf@gmail.com}{grezesf@gmail.com} or \href{https://www.linkedin.com/in/felix-grezes}{LinkedIn}\\
-        \textsc{Phone:}     & +1 (310) 496 6155\\
-        \textsc{Address:}   & 19 Hamilton Terrace, Apt. 1K. New York, NY. USA.  \\
-    \end{tabular}
-\bigskip
+% \section{Contact}
+%     \begin{tabular}{rl}
+%         \textsc{Email:}     & \href{mailto:grezesf@gmail.com}{grezesf@gmail.com} or \href{https://www.linkedin.com/in/felix-grezes}{LinkedIn}\\
+%         \textsc{Phone:}     & +1 (310) 496 6155\\
+%         \textsc{Address:}   & 19 Hamilton Terrace, Apt. 1K. New York, NY. USA.  \\
+%     \end{tabular}
+% \bigskip
+
+% space in between Name and first section
+\vspace{-0.5cm}
 
 %Section: Work Experience at the top
 \section{Work Experience}
     \vspace{0.2cm}
     \begin{tabular}{r|p{14cm}}
         % Apple Internship
-        \emph{Summer 2018} & Machine Learning Engineer for the Siri Speech team in Cheltenham, UK.\\
-        & \footnotesize{Conception and implementation of state-of-the-art neural network architectures for speech recognition.}\\
+        \emph{Summer 2018} & Machine Learning Engineer for {\bfseries Apple} in the Siri Speech team in Cheltenham, UK.\\
+        & \small{R\&D of binary neural network architectures for speech keyword detection on low power devices. Demonstrated feasibility of binary weights for high accuracy/small memory size/low resource models. Work done in in Python using Keras/Tensorflow along Oracle Grid Engine.}\\
         \multicolumn{2}{c}{} \\
 
         % ATT Internship
-        \emph{Summer 2017} & Research Scientist at the Big Data Research department of AT\&T Shannon Lab\\
-        & \footnotesize{Conception and implementation of Generative Adversarial Networks (GANs) over text data, for use in a Adaptive Dialog Assistant System.}\\
+        \emph{Summer 2017}& Research Scientist at {\bfseries AT\&T} Shannon Lab - Big Data Research dept. in Middletown, NJ.\\
+        & \small{R\&D of Generative Adversarial Networks (GANs) over text data, for use in a Adaptive Dialog Assistant System. Provided customer care agents with plausible generated answers to queries, saving time and energy. Work done in Python Keras/Tensorflow along Hadoop.}\\
         \multicolumn{2}{c}{} \\
 
         % CUNY
-        \emph{Fall 2012 - Present} & Research Assistant  at the CUNY Graduate Center, under the supervision of Pr. Michael Mandel at the \href{https://www.gc.cuny.edu/CUNY_GC/media/Computer-Science/SpeechLab.pdf}{Brooklyn College Speech Lab}, and of Pr. Andrew Rosenberg at the {Speech Lab @ Queens College} \\
-        & \footnotesize{Research on Adversarial Attacks and Defense of Neural Networks, the use of Recurrent Neural Networks, Reservoir Networks, and prosodic information for Audio Source Separation, Natural Language Processing.}\\
-        & \footnotesize{Conception and writing of published scientific papers}\\
+        \emph{Fall 2012 - Present} & Research Assistant at the {\bfseries CUNY Graduate Center} in New York, NY \\
+        & \small{Collaborated with Pr. Michael Mandel at the \href{https://www.gc.cuny.edu/CUNY_GC/media/Computer-Science/SpeechLab.pdf}{Brooklyn College Speech Lab} and Pr. Andrew Rosenberg at the Speech Lab @ Queens College, researching Adversarial Attacks and Defense of Neural Networks, the use of Recurrent Neural Networks, Reservoir Networks, and prosodic information for Audio Source Separation and Natural Language Processing. Work done in Pytorch with CUDA.}\\
         \multicolumn{2}{c}{} \\
 
         % Hunter
-        \emph{Spring 2016 - Present} &  Adjunct Lecturer at Hunter College, CUNY\\
-        & \footnotesize{Teaching of advanced algorithms and data structures, their design and analysis. Supervision of programming project for CS majors and minors.}\\
-        & \footnotesize{Conception of course material and examination.}\\
+        \emph{Spring 2016 - Present} &  Adjunct Lecturer at {\bfseries Hunter College} in New York NY.\\
+        & \small{Teaching of advanced algorithms and data structures, their design and analysis. Supervision of programming project for CS majors and minors. Conception and creation of course syllabus, materials, and examinations.}\\
         \multicolumn{2}{c}{} \\
 
         % Master Thesis
-        \textsc{July - Dec 2011 } & Research Engineer at the \href{http://www.aging-vision-action.fr/}{Aging in Vision and Action Lab} in Paris\\
-        & \footnotesize{(Formerly the Computational Neuroscience Lab ANC of the UPMC)}\\
-        & \footnotesize{Research on the neural bases of active exploratory behavior in rats}\\
-        & \footnotesize{Conception of a model of the rat brain and implementation in C++}\\
-        & \footnotesize{Integration of the model in the \href{http://www.isir.upmc.fr/}{ISIR} lab platform, \href{https://github.com/sferes2/sferes2}{SFERES}}\\
-        & \footnotesize{Improvement of the model's performances by evolution and genetic algorithm}\\
-        & \footnotesize{Analysis and validation of the scientific hypothesis}\\
-        %& \footnotesize{}\\
+        \emph{July - Dec 2011} & Research Engineer at the {\bfseries \href{http://www.aging-vision-action.fr/}{Aging in Vision and Action Lab} }in Paris, France.\\
+        % & \small{(Formerly the Computational Neuroscience Lab ANC of the UPMC)}\\
+        & \small{Conception and implementation of a rat brain model for research on the neural bases of active exploratory behavior in rats. Validated the hypothesis by improving the model's performances by evolution and genetic algorithm.}\\
+        % & \small{Integration of the model in the \href{http://www.isir.upmc.fr/}{ISIR} lab platform, \href{https://github.com/sferes2/sferes2}{SFERES}}\\
         \multicolumn{2}{c}{} \\
 
-        \textsc{2008 - 2011} & Research projects: design and development\\
-        & \footnotesize{Boosting algorithm for automated text recognition, in Octave}\\
-        & \footnotesize{Collision detection using multi-agent programming, in Java}\\
-        & \footnotesize{Markov decision processes for an improved AI in Starcraft video game, in C++ and XML}\\
-        & \footnotesize{Power series calculation using lazy evaluation, in DrScheme}\\
-        & \footnotesize{Perceptron for learning virtual soccer players, in Java}\\
-        %& \footnotesize{}\\
+        % \emph{2008 - 2011} & Research projects: design and development\\
+        % & \small{Sentiment Analysis on User-User discussions on Reddit, in Python} \\ 
+        % & \small{Boosting algorithm for automated text recognition, in Octave}\\
+        % & \small{Collision detection using multi-agent programming, in Java}\\
+        % & \small{Markov decision processes for an improved AI in Starcraft video game, in C++ and XML}\\
+        % & \small{Power series calculation using lazy evaluation, in DrScheme}\\
+        % & \small{Perceptron for learning virtual soccer players, in Java}\\
+        %& \small{}\\
 
-    \end{tabular}\\
+    \end{tabular}
 
 %Section: Education
 \section{Education and Degrees}
     \vspace{0.2cm}
-    \begin{tabular}{rl} 
-        \emph{ ~~ Fall 2012 - Present} & Doctoral Program in Computer Science at the City University of New York, \\
-        & member of the IGERT {\em From Data to Solutions} program of Columbia University \\
-        \textsc{2011} & {\bfseries Master's Degree in Computer Science} from Université Pierre et Marie Curie, Paris 6,\\
-        & specialized in Artificial Intelligence and Decision theory\\ 
-        \textsc{2009-2011} & Master cursus in Computer Science at Université Pierre et Marie Curie, Paris 6, \\
-        &  specialized in Artificial Intelligence, learning agents and decision theory \\
-        \textsc{2009} & {\bfseries Undergraduate Degree in Math and Computer Science},\\
-        & from Université Pierre et Marie Curie, Paris 6\\
-        \textsc{2008-2009} & Undergraduate of Math and Computer Science, City College Of New York\\
-        \textsc{2006-2008} & Undergraduate of Math and Computer Science, from Université Pierre et Marie Curie, Paris 6\\
-    \end{tabular}\\
+    \begin{tabular}{rp{14cm}} 
+        \hspace{0.35cm} \emph{Fall 2012 - Present} & PhD Candidate in Computer Science at the CUNY Graduate Center.\\
+        & Member of the IGERT {\em From Data to Solutions} program of Columbia University.
+        \vspace{0.15cm} \\
+
+        \emph{2009 - 2011} & {\bfseries Master's Degree in Computer Science} from Université Pierre et Marie Curie, Paris 6, France. Specialized in Artificial Intelligence and Decision theory
+        \vspace{0.15cm} \\
+
+        % \emph{2009-2011} & Master program in Computer Science at the Université Pierre et Marie Curie, Paris 6, France. Specialized in Artificial Intelligence, learning agents and decision theory.
+        % \vspace{0.15cm} \\
+         
+        \emph{2006 - 2009} & {\bfseries Undergraduate Degree in Math and Computer Science}, from the Université Pierre et Marie Curie, Paris 6, France. Exchange program with CUNY City College of New York in 2008-09.
+        \vspace{0.15cm} \\
+         
+        % \emph{2008-2009} & Undergraduate of Math and Computer Science, City College Of New York.
+        % \vspace{0.15cm} \\
+         
+        % \emph{2006-2008} & Undergraduate of Math and Computer Science, from Université Pierre et Marie Curie, Paris 6, France.
+
+    \end{tabular}
 
 %%Section: Teaching
 %\section{Teaching Experience}
 %\begin{tabular}{r|p{11cm}}
 %\textsc{Spring 2016 - Present} &  Adjunct Teacher at Hunter College, CUNY\\
-%& \footnotesize{Teaching of advanced algorithms and data structures, their design and analysis. Supervision of programming project for CS majors and minors. Course and examination conception.}\\
+%& \small{Teaching of advanced algorithms and data structures, their design and analysis. Supervision of programming project for CS majors and minors. Course and examination conception.}\\
 %
 %\multicolumn{2}{c}{} \\
 %\textsc{2009-2011} &  Mathematics and English teacher for \href{http://www.acadomia.fr/}{Acadomia}\\
-%& \footnotesize{Individual tutoring of 15 students aged 12-17}\\
-%& \footnotesize{Training for Baccalauréat and Brevet (French graduation exams)}\\
-%& \footnotesize{Preparation of courses and work methods}\\
+%& \small{Individual tutoring of 15 students aged 12-17}\\
+%& \small{Training for Baccalauréat and Brevet (French graduation exams)}\\
+%& \small{Preparation of courses and work methods}\\
 %\multicolumn{2}{c}{} \\
 %\textsc{~~~~~~Summer 2006} & Mathematics teacher at the \href{http://www.excellencia.fr/en}{Excellencia French Summer Camp} \\
-%& \footnotesize{Group tutoring of students grade 6 through 10}\\
-%& \footnotesize{Preparation and grading of exams}\\
-%& \footnotesize{Writing of full student report cards, for the families}\\
+%& \small{Group tutoring of students grade 6 through 10}\\
+%& \small{Preparation and grading of exams}\\
+%& \small{Writing of full student report cards, for the families}\\
 %\end{tabular}\\
 
 
 %Section: Publications:
 \section{Works \& Publications}
     \vspace{0.2cm}
-    \begin{tabular}{rl}
-        \textsc{\hspace{2.3cm}2018} & \href{https://grezesf.github.io/papers/2018_ICASSP18__Enhancement_of_Spatial_Clustering_Based_Time_Frequency_Masks_using_LSTM_Neural_Networks.pdf}{Enhancement of Spatial Clustering-based Time-frequency Masks using LSTM Neural Networks}\\
+    \begin{tabular}{rp{14cm}}
+        \hspace{2.5cm}\emph{2018} & \href{https://grezesf.github.io/papers/2018_ICASSP18__Enhancement_of_Spatial_Clustering_Based_Time_Frequency_Masks_using_LSTM_Neural_Networks.pdf}{Enhancement of Spatial Clustering-based Time-frequency Masks using LSTM Neural Nets}
+        \vspace{0.15cm} \\
 
-        \textsc{2018} & \href{https://grezesf.github.io/papers/2018_IS18_Improved_MVDR_Beamforming_Using_LSTM_Speech_Models_to_Clean_Spatial_Clustering_Masks.pdf}{Improved MVDR Beamforming Using LSTM Speech Models to Clean Spatial Clustering Masks}\\
+        \emph{2018} & \href{https://grezesf.github.io/papers/2018_IS18_Improved_MVDR_Beamforming_Using_LSTM_Speech_Models_to_Clean_Spatial_Clustering_Masks.pdf}{Better MVDR Beamforming Using LSTM Speech Models to Clean Spatial Clustering Masks}
+        \vspace{0.15cm} \\
 
-        \textsc{2017} & \href{https://grezesf.github.io/papers/2017_IS17_Combining_Spatial_Clustering_with_LSTM_Speech_Models_for_Multichannel_Speech_Enhancement.pdf}{Combining Spatial Clustering with LSTM Speech Models for Multichannel Speech Enhancement}\\
+        \emph{2017} & \href{https://grezesf.github.io/papers/2017_IS17_Combining_Spatial_Clustering_with_LSTM_Speech_Models_for_Multichannel_Speech_Enhancement.pdf}{Adding Spatial Clustering to LSTM Speech Models for Multichannel Speech Enhancement}\\
+        & \small{Presented at the 2017 Mid-Atlantic Student Colloquium on Speech, Language and Learning.}
+        \vspace{0.15cm} \\
 
-        \textsc{2016} & \href{https://grezesf.github.io/papers/2015_LRE15_linguistically-motivated-features.pdf}{Linguistically-Motivated Features for Language Recognition}\\
+        \emph{2016} & \href{https://grezesf.github.io/papers/2015_LRE15_linguistically-motivated-features.pdf}{Linguistically-Motivated Features for Language Recognition}
+        \vspace{0.15cm} \\
 
-        \textsc{2015} & \href{https://grezesf.github.io/papers/2015_LRE15.pdf}{Speech Lab @ Queens College: Language Recognition Evaluation 2015} \\
-        & part of the 2015 NIST Language Recognition Evaluation Plan\\
+        \emph{2015} & \href{https://grezesf.github.io/papers/2015_LRE15.pdf}{Speech Lab @ Queens College: Language Recognition Evaluation 2015} \\
+        & \small{Part of the 2015 NIST Language Recognition Evaluation Plan}
+        \vspace{0.15cm} \\
 
-        \textsc{2014} & \href{https://grezesf.github.io/papers/2014_09_04_Second_Exam_Survey_Felix_Grezes.pdf}{Reservoir Computing: A New Paradigm for Neural Networks: A Survey}\\
-        & Second Examination of the CUNY Graduate Center Computer Science Program\\
+        \emph{2014} & \href{https://grezesf.github.io/papers/2014_09_04_Second_Exam_Survey_Felix_Grezes.pdf}{Reservoir Computing: A New Paradigm for Neural Networks: A Survey}\\
+        & \small{Second Examination of the CUNY Graduate Center Computer Science Program}
+        \vspace{0.15cm} \\
 
-        \textsc{2013} & \href{https://grezesf.github.io/papers/2013-03_LetMeFinish.pdf}{Let Me Finish: Automatic Conflict Detection Using Speaker Overlap}\\
-        & published in Proceedings - InterSpeech 2013\\
+        \emph{2013} & \href{https://grezesf.github.io/papers/2013-03_LetMeFinish.pdf}{Let Me Finish: Automatic Conflict Detection Using Speaker Overlap}\\
+        & \small{Published in Proceedings - InterSpeech 2013, and presented at InterSpeech 2013 in Lyon, France.}
+        \vspace{0.15cm} \\
 
-        \textsc{2012} & \href{https://grezesf.github.io/papers/2012-Exploratory_Behaviour_Depends_on_Multisensory_Integration_during_Spatial_Learning.pdf}{Exploratory Behaviour Depends on Multisensory Integration during Spatial Learning}\\
-        & published in Artificial Neural Networks and Machine Learning - ICANN 2012
+        \emph{2012} & \href{https://grezesf.github.io/papers/2012-Exploratory_Behaviour_Depends_on_Multisensory_Integration_during_Spatial_Learning.pdf}{Exploratory Behaviour Depends on Multisensory Integration during Spatial Learning}\\
+        & \small{Published in Artificial Neural Networks and Machine Learning - ICANN 2012}
     \end{tabular}\\
 
 % extra info
 \section{Additional Information}
     \vspace{0.2cm}
     \begin{itemize}
-        \item Interest in highly reproducible research as taught by \href{http://stodden.net}{Pr. Stodden}. \href{https://jupyter.org/}{Jupyter} notebooks used in research.
-        \item Personal git repositories: \href{https://github.com/grezesf}{github.com/grezesf}
+        \item Interested in highly reproducible research as taught by \href{http://stodden.net}{Pr. Stodden} and advocated by \href{https://jupyter.org/}{Jupyter} notebooks.
+        \item CUNY Graduate Center CS Student Association chair, coordinator and mentor.
+        \item Personal git repositories: \href{https://github.com/grezesf}{github.com/grezesf}. 
         \item Native speaker of French and English. Basic knowledge of German.
     \end{itemize}
 
@@ -213,12 +229,12 @@ ItalicFont = Fontin-Italic.otf
 %\section{Skills}
 %\begin{tabular}{r|l}
 %\textsc{Academic} & Expertise in Artificial Intelligence tools, including:\\
-%&\footnotesize{Neural Networks, in particular Reservoir networks, a class of recurrent networks }\\
-%&\footnotesize{Data mining algorithms, single and multi-criterion classification}\\
-%&\footnotesize{Genetic, symbolic, statistical and logical learning algorithms}\\
-%&\footnotesize{Decision theory algorithms, for individual and group decision}\\
-%&\footnotesize{Adaptive multi-agent programming}\\
-%&\footnotesize{Algorithm complexity theory}\\
+%&\small{Neural Networks, in particular Reservoir networks, a class of recurrent networks }\\
+%&\small{Data mining algorithms, single and multi-criterion classification}\\
+%&\small{Genetic, symbolic, statistical and logical learning algorithms}\\
+%&\small{Decision theory algorithms, for individual and group decision}\\
+%&\small{Adaptive multi-agent programming}\\
+%&\small{Algorithm complexity theory}\\
 %\multicolumn{2}{c}{} \\
 %\textsc{Technical} & Knowledge of professional programming languages: Java, C/C++, XML, MySQL\\
 %& Knowledge of scientific programming languages: Python, OCaml, Octave/Matlab, Prolog, Haskell\\
