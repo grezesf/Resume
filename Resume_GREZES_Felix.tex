@@ -12,6 +12,8 @@
 \usepackage{supertabular}               %for Grades
 \usepackage{titlesec}                   %custom \section
 
+
+
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
@@ -78,8 +80,8 @@
     {\Huge Felix \textsc{Grezes}}
     \hspace*{\fill} {\large \href{mailto:grezesf@gmail.com}{grezesf@gmail.com} ~|~ {\large (332) 373-9430} ~|~ \href{https://github.com/grezesf}{github.com/grezesf} }\\
     % \hspace*{\fill} {\large +1 (310) 496 6155}\\
-    \hspace*{\fill} {\large 19 Hamilton Terrace, Apt. 1K, New York, NY, 10031}
-    \bigskip
+    % \hspace*{\fill} {\large 113 W 131 ST APT 2, New York, NY, 10027}
+    % \bigskip
     \par}
 
 
@@ -98,38 +100,42 @@
 
 %Section: Work Experience at the top
 \section{Work Experience}
+    % add some v space for readability
     \vspace{0.2cm}
-    \begin{tabular}{r|p{14cm}}
+    \begin{tabular}{r|p{160mm}}
         % ADS
-        \emph{March 2021} & Machine Learning and Natural Language Processing Specialist for the SAO/NASA Astrophysics Data System at the Center for Astrophysics | Harvard \& Smithsonian.\\
-        & \small{Designed, trained and evaluated machine learning / deep learning models that expand the functionality of the ADS search engine with new capabilities and services.}\\
+        % hspace to aling with above
+        \textbf{NASA} &  Machine Learning and Natural Language Processing Specialist, 2021-Present, New York, NY\\ 
+        & \small{Designed, trained and evaluated machine learning models that expand the NASA / Smithsonian Astrophysical Observatory's \href{https://scixplorer.org/}{Astrophysics Data System} services with automatic classification and labeling capabilities.}\\
+        & \small{Organized and ran the \href{https://ui.adsabs.harvard.edu/WIESP/}{Workshop for Artificial intelligence for Scientific Publications} community challenges, building and curating novel tasks, datasets and baselines. Work done in Python with Huggingface.}\\
+        % Machine Learning and Natural Language Processing Specialist for the {\bfseries \href{https://scixplorer.org/}{SAO/NASA Astrophysics Data System}} at the Center for Astrophysics | Harvard \& Smithsonian.\\
         \multicolumn{2}{c}{} \vspace{-1.5mm} \\
 
         % Apple Internship
-        \emph{Summer 2018} & Machine Learning Engineer for {\bfseries Apple} on the Siri Speech team in Cheltenham, UK\\
-        & \small{R\&D of binary neural network architectures for speech keyword detection on low power devices. Demonstrated feasibility of binary weights for high accuracy/small memory size/low resource models. Work done in Python and Keras/TensorFlow using Oracle Grid Engine.}\\
+        \textbf{Apple} & Machine Learning Engineer on the Siri Speech team, summer 2018 in Cheltenham, UK\\
+        & \small{R\&D of binary neural network architectures for speech keyword detection on low power devices. Demonstrated feasibility of binary weights for high accuracy, low resource models by reducing required memory size by 50\%. Work done in Python and Keras/TensorFlow using Oracle Grid Engine.}\\
         \multicolumn{2}{c}{} \vspace{-1.5mm} \\
 
         % ATT Internship
-        \emph{Summer 2017}& Research Scientist at {\bfseries AT\&T} Research Lab, Data Science and AI Research in New York, NY\\
-        & \small{R\&D of generative adversarial networks (GANs) over text data, for use in an adaptive dialog assistant system. Generated tailored answers to customer queries, significantly reducing average speed of answer and handle time for care agents. Work done in Python and Keras/TensorFlow using Hadoop.}\\
+        \textbf{AT\&T} & Research Scientist at the Data Science and AI Research Lab, summer 2017, New York, NY\\
+        & \small{R\&D of generative adversarial networks (GANs) over text data, improving response speed for an adaptive dialog assistant system. Generated tailored answers to customer queries, significantly reducing average speed of answer and handle time for care agents. Work done in Python and Keras/TensorFlow using Hadoop.}\\
         % Provided customer care agents with plausible generated answers to queries, saving time and energy. Work done in Python and Keras/TensorFlow using Hadoop.}\\
         \multicolumn{2}{c}{} \vspace{-1.5mm} \\
         
         % Hunter
-        \emph{Spring 2016 - Present} &  Adjunct Lecturer at {\bfseries Hunter College} in New York, NY\\
+        \textbf{Hunter} & Adjunct Lecturer at Hunter College, 2016 - 2021 in New York, NY\\
         & \small{Teaching of advanced algorithms and data structures, their design and analysis. Supervision of programming project for CS majors and minors. Conception and creation of course syllabus, materials, and examinations. Mentored undergraduates and helped prepare them for the workforce. }\\
         \multicolumn{2}{c}{} \vspace{-1.5mm} \\
         
         % CUNY
-        \emph{Fall 2012 - Present} & Research Assistant at the {\bfseries CUNY Graduate Center} in New York, NY \\
+        \textbf{CUNY} & Research Assistant, \href{https://www.gc.cuny.edu/}{Graduate Center} of the City University of New York, 2012 - 2022, in New York, NY \\
         & \small{Collaborated with Pr. Michael Mandel at the \href{https://www.gc.cuny.edu/CUNY_GC/media/Computer-Science/SpeechLab.pdf}{Brooklyn College Speech Lab} on adversarial attacks and defenses of neural networks, and the use of recurrent neural networks for audio source separation.}\\
-        & \small{Collaborated with Pr. Andrew Rosenberg at the Queens College speech lab on the use of reservoir networks and prosodic information for conflict detection and NLP. Performed sentiment analysis on user discussions on Reddit. Work done in PyTorch with CUDA.}\\
+        & \small{Collaborated with Pr. Andrew Rosenberg at the Queens College speech lab on the use of reservoir networks and prosodic information for conflict detection and NLP. Performed sentiment analysis on user discussions on Reddit. Work done in PyTorch with CUDA backend.}\\
         % sentiment analysis on user-user discussions on Reddit, the use of recurrent neural networks, reservoir networks, and prosodic information for audio source separation and natural language processing. 
         \multicolumn{2}{c}{} \vspace{-1.5mm} \\
 
         % Master Thesis
-        \emph{July - Dec 2011} & Research Engineer at the {\bfseries \href{http://www.aging-vision-action.fr/}{Aging in Vision and Action Lab} }in Paris, FRA\\
+        \textbf{CNRS} & Research Engineer, \href{https://www.institut-vision.org/index.php/en/research/aging-vision-and-action}{Institution de la Vision}, fall 2011, Paris, France\\
         % & \small{(Formerly the Computational Neuroscience Lab ANC of the UPMC)}\\
         & \small{Conception and implementation of a rat brain model for research on the neural bases of active exploratory behavior in rats. Validated the hypothesis by improving the neural network model's performances by evolution and genetic algorithm. Work done in C++ using the \href{https://github.com/sferes2/sferes2}{SFERES} framework.}\\
         % & \small{Integration of the model in the \href{http://www.isir.upmc.fr/}{ISIR} lab platform, \href{https://github.com/sferes2/sferes2}{SFERES}}\\
@@ -142,7 +148,7 @@
         % & \small{Group tutoring of students grade 6 through 10}\\
         % & \small{Preparation and grading of exams}\\
         % & \small{Writing of full student report cards, for the families}\\
-        \multicolumn{2}{c}{} \vspace{-1.5mm} \\
+        % \multicolumn{2}{c}{} \vspace{-1.5mm} \\
 
         % \emph{2008 - 2011} & Research projects: design and development\\
         % & \small{Sentiment Analysis on User-User discussions on Reddit, in Python} \\ 
@@ -158,21 +164,19 @@
 %Section: Education
 \section{Education and Degrees}
     \vspace{0.2cm}
-    \begin{tabular}{rp{14cm}} 
-        \hspace{0.35cm} \emph{Fall 2012 - Present} & \textbf{PhD Candidate} in Computer Science at the CUNY Graduate Center in New York, NY\\
-         & Member of the \href{http://www.cs.columbia.edu/igert/people_students.shtml}{IGERT {\em From Data to Solutions}} program of Columbia University
-        \vspace{0.15cm} \\
+    \begin{tabular}{r|p{160mm}} 
+        % hphantom to align with longest text in right col
+        Ph.D. & Doctorate in Computer Science at the CUNY Graduate Center in New York, NY\\
+        \hphantom{\textbf{Hunter}} & \small{Member of the \href{http://www.cs.columbia.edu/igert/people_students.shtml}{IGERT {\em From Data to Solutions}} program of Columbia University}\\
+        \multicolumn{2}{c}{} \vspace{-1.5mm} \\
 
-        \emph{2009 - 2011} & {\bfseries Master's Degree in Computer Science} from Sorbonne Université, FRA \\
-        & Specialized in Artificial Intelligence and Decision Theory
-        \vspace{0.15cm} \\
-
-        % \emph{2009-2011} & Master program in Computer Science at the Université Pierre et Marie Curie, Paris 6, France. Specialized in Artificial Intelligence, learning agents and decision theory.
-        % \vspace{0.15cm} \\
+        M.S. & Master's Degree in Computer Science from Sorbonne Université, FRA \\
+        & \small{Specialized in Artificial Intelligence and Decision Theory}\\
+        \multicolumn{2}{c}{} \vspace{-1.5mm} \\
          
-        \emph{2006 - 2009} & {\bfseries B.S. in Math and Computer Science}, from Sorbonne Université, FRA \\ 
-        & Exchange program with CUNY City College of New York in 2008-09
-        \vspace{0.15cm} \\
+        B.S. & Bachelor's in Math and Computer Science, from Sorbonne Université, FRA \\ 
+        & \small{Exchange program with CUNY City College of New York in 2008-2009}\\
+        \multicolumn{2}{c}{} \vspace{-1.5mm} \\
          
         % \emph{2008-2009} & Undergraduate of Math and Computer Science, City College Of New York.
         % \vspace{0.15cm} \\
@@ -201,16 +205,61 @@
 
 
 %Section: Publications:
-\section{Works \& Publications}
+\section{Selected Works \& Publications}
     \vspace{0.2cm}
-    \begin{tabular}{rp{14cm}}
-        \hspace{2.5cm}\emph{2018} & \href{https://grezesf.github.io/papers/2018_ICASSP18__Enhancement_of_Spatial_Clustering_Based_Time_Frequency_Masks_using_LSTM_Neural_Networks.pdf}{Enhancement of Spatial Clustering-based Time-frequency Masks using LSTM Neural Nets}
+    \begin{tabular}{rp{15.5cm}}
+
+        % template
+        % \emph{} & \href{}{} \\
+        % & \small{{\em }}
+        % \vspace{0.15cm} \\
+
+        % hphantom to align with longest text in right col
+        \emph{2024} & \href{https://scixplorer.org/abs/2024AGUFMIN54B...1T/abstract}{INDUS: Effective and Efficient Language Models for Scientific Applications}\\
+        \hphantom{\textbf{Hunter}} & \small{{\em Proceedings of the 2024 Conference on Empirical Methods in NLP: Industry Track}}
+        \vspace{0.15cm} \\
+        
+        \emph{2024} & \href{https://scixplorer.org/abs/2024cllr.confE...1A/abstract}{Enriching a Time-Domain Astrophysics Corpus with Named Entity, Coreference and Astrophysical Relationship Annotations} \\
+        & \small{{\em Proceedings of the 2024 International Conference on Computational Linguistics, Language Resources and Evaluation}}
         \vspace{0.15cm} \\
 
-        \emph{2018} & \href{https://grezesf.github.io/papers/2018_IS18_Improved_MVDR_Beamforming_Using_LSTM_Speech_Models_to_Clean_Spatial_Clustering_Masks.pdf}{Better MVDR Beamforming Using LSTM Speech Models to Clean Spatial Clustering Masks}
+        \emph{2023} & \href{https://scixplorer.org/abs/2023wies.conf..143G/abstract}{Function of Citation in Astrophysics Literature (FOCAL): Findings of the Shared Task} \\
+        & \small{{\em Proceedings of the 2nd Workshop on Information Extraction from Scientific Publications}}
+        \vspace{0.15cm} \\ 
+
+        \emph{2023} & \href{https://scixplorer.org/abs/2023arXiv231214211B/abstract}{Experimenting with Large Language Models and vector embeddings in NASA SciX}
         \vspace{0.15cm} \\
 
-        \emph{2017} & \href{https://grezesf.github.io/papers/2017_IS17_Combining_Spatial_Clustering_with_LSTM_Speech_Models_for_Multichannel_Speech_Enhancement.pdf}{Adding Spatial Clustering to LSTM Speech Models for Multichannel Speech Enhancement}\\
+        \emph{2022} & \href{https://scixplorer.org/abs/2022arXiv221200744G/abstract}{Improving astroBERT using Semantic Textual Similarity}\\
+        & \small{{\em Astronomical Data Analysis Software and Systems 2022}}
+        \vspace{0.15cm} \\
+        
+        \emph{2022} & \href{https://scixplorer.org/abs/2022wies.conf....1G/abstract}{Overview of the First Shared Task on Detecting Entities in the Astrophysics Literature (DEAL)}\\
+        & \small{{\em Proceedings of the first Workshop on Information Extraction from Scientific Publications}}
+        \vspace{0.15cm} \\
+        
+    \end{tabular}\\
+
+\section{Selected Works \& Publications (continued)}
+    \vspace{0.2cm} 
+    \begin{tabular}{rp{15.5cm}}
+    
+        % hphantom to align with longest text in right col
+        \emph{2022} & \href{https://scixplorer.org/abs/2023arXiv230607796G/abstract}{Finite Gaussian Neurons: Defending against adversarial attacks by making neural networks say "I don't know"} \\
+        \hphantom{\textbf{Hunter}} & \small{Ph.D. thesis presented to the CUNY Graduate Center Computer Science Program}
+        \vspace{0.15cm} \\        
+
+        \emph{2021} & \href{https://scixplorer.org/abs/2024ASPC..535..119G/abstract}{Building astroBERT, a Language Model for Astronomy \& Astrophysics}\\
+        & \small{{\em Astronomical Data Analysis Software and Systems XXXI}}
+        \vspace{0.15cm} \\
+
+        \emph{2018} & \href{https://grezesf.github.io/papers/2018_ICASSP18__Enhancement_of_Spatial_Clustering_Based_Time_Frequency_Masks_using_LSTM_Neural_Networks.pdf}{Enhancement of Spatial Clustering-based Time-frequency Masks using LSTM Neural Nets}
+        \vspace{0.15cm} \\
+
+        \emph{2018} & \href{https://grezesf.github.io/papers/2018_IS18_Improved_MVDR_Beamforming_Using_LSTM_Speech_Models_to_Clean_Spatial_Clustering_Masks.pdf}{Improved MVDR Beamforming Using LSTM Speech Models to Clean Spatial Clustering Masks}
+        \vspace{0.15cm} \\
+
+        \emph{2017} & \href{https://grezesf.github.io/papers/2017_IS17_Combining_Spatial_Clustering_with_LSTM_Speech_Models_for_Multichannel_Speech_Enhancement.pdf}{Combining Spatial Clustering with LSTM Speech Models for Multichannel Speech Enhancement}\\
         & \small{Presented at the 2017 Mid-Atlantic Student Colloquium on Speech, Language and Learning}
         \vspace{0.15cm} \\
 
@@ -226,23 +275,22 @@
         \vspace{0.15cm} \\
 
         \emph{2013} & \href{https://grezesf.github.io/papers/2013-03_LetMeFinish.pdf}{Let Me Finish: Automatic Conflict Detection Using Speaker Overlap}\\
-        & \small{Published in {\em Proceedings - InterSpeech 2013}, and presented at InterSpeech 2013 in Lyon, France}
+        & \small{{\em Proceedings - InterSpeech 2013}}
         \vspace{0.15cm} \\
 
         \emph{2012} & \href{https://grezesf.github.io/papers/2012-Exploratory_Behaviour_Depends_on_Multisensory_Integration_during_Spatial_Learning.pdf}{Exploratory Behaviour Depends on Multisensory Integration during Spatial Learning}\\
-        & \small{Published in {\em Artificial Neural Networks and Machine Learning - ICANN 2012}}
+        & \small{{\em Artificial Neural Networks and Machine Learning - ICANN 2012}}
     \end{tabular}\\
 
-% extra info
-\section{Additional Information}
-    \vspace{0.2cm}
-    \begin{itemize}
-        % \item Interested in highly reproducible research as taught by \href{http://stodden.net}{Pr. Stodden} and advocated by \href{https://jupyter.org/}{Jupyter} notebooks
-        % \item CUNY Graduate Center CS Student Association chair, coordinator and mentor (2017-19) 
-        % \item Personal git repositories: \href{https://github.com/grezesf}{github.com/grezesf}
-        \item Languages: English (native), French (native), German (basic) 
-        % Native speaker of French and English. Basic knowledge of German
-    \end{itemize}
+% % extra info
+% \section{Additional Information}
+%     \vspace{0.2cm}
+%     \begin{itemize}
+%         % \item Interested in highly reproducible research as taught by \href{http://stodden.net}{Pr. Stodden} and advocated by \href{https://jupyter.org/}{Jupyter} notebooks
+%         % \item CUNY Graduate Center CS Student Association chair, coordinator and mentor (2017-19) 
+%         % \item Personal git repositories: \href{https://github.com/grezesf}{github.com/grezesf}
+%         % \item Languages: English (native), French (native)
+%     \end{itemize}
 
 %
 %%Section: Skills
